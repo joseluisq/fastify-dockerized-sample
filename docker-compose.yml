@@ -1,0 +1,13 @@
+version: '3'
+services:
+  fastify:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: fastify-docker
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "${NODE_PORT}:${NODE_PORT}"
+    volumes: 
+      - .:/app

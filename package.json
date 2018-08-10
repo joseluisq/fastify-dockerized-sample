@@ -1,0 +1,12 @@
+{
+  "name": "docker-fastify-sample",
+  "version": "0.0.0",
+  "main": "index.js",
+  "private": true,
+  "dependencies": {
+    "fastify": "^1.9.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
